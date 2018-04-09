@@ -3,6 +3,7 @@ var text = "Brittany Garcia";
 var $name = document.querySelector("#name");
 var speedRange = [200, 300];
 
+$name.innerHTML = '';
 writeLetter();
 
 function getSpeed() {
