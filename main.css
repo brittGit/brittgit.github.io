@@ -7,7 +7,7 @@ body {
     -o-background-size: cover;
     background-size: cover;*/
     background: radial-gradient(transparent, rgb(88, 88, 88)), rgb(145, 145, 145);
-    font-family: sans-serif;
+    font-family: monospace;
 }
 
 /* objects */
@@ -18,9 +18,31 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /*id for specific elements*/
 #name{
     color: rgb(57, 184, 243);
+    display: inline-block;
+}
+
+.cursor {
+    opacity: 1;
+    width: 15px;
+    display: inline-block;
+    margin-left: -2px;
+    height: 100%;
+    border: 1.5px solid #FF2E88;
+    animation: blink 1s infinite linear;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 /*  
