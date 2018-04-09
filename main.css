@@ -6,7 +6,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
-    background: radial-gradient(transparent, rgb(0, 0, 0)), rgb(54, 47, 47);
+    background: radial-gradient(transparent, rgb(0, 0, 0)), rgb(63, 63, 63);
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -21,7 +21,7 @@ body {
 
 /*id for specific elements*/
 #name{
-    color: rgb(57, 184, 243);
+    color: rgb(8, 151, 218);
     display: inline-block;
     font-size: 2.5em;
 }
