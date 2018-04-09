@@ -1,6 +1,6 @@
 var i = 0;
-var text = "Brittany Garcia";
 var $name = document.querySelector("#name");
+var text = $name.innerText;
 var speedRange = [200, 300];
 
 $name.innerHTML = '';

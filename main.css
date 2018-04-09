@@ -6,7 +6,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;*/
-    background: radial-gradient(transparent, rgb(88, 88, 88)), rgb(145, 145, 145);
+    background: radial-gradient(transparent, rgb(0, 0, 0)), rgb(54, 47, 47);
     font-family: 'Source Code Pro', monospace;
 }
 
