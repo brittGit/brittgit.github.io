@@ -1,5 +1,5 @@
 var i = 0;
-var $name = document.querySelector("#name");
+var $name = document.querySelector("#underNameText");
 var text = $name.innerText;
 var speedRange = [200, 300];
 
