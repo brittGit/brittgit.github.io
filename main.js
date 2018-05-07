@@ -1,21 +1,28 @@
-var i = 0;
-var $name = document.querySelector("#name");
-var text = $name.innerText;
-var speedRange = [200, 300];
+var speedRange = [100, 200];
+var typingElems = document.querySelectorAll('.typing-container__text');
 
-$name.innerHTML = '';
-writeLetter();
+for (var i = 0; i < typingElems.length; i++) {
+    initTyping(typingElems[i]);
+}
+
+function initTyping(elem) {
+    var i = 0;
+    var text = elem.innerText;
+
+    elem.innerHTML = '';
+
+    function writeLetter() {
+        elem.innerHTML += text[i];
+        i++;
+
+        if (i < text.length) {
+            setTimeout(writeLetter, getSpeed());
+        }
+    }
+
+    writeLetter();
+}
 
 function getSpeed() {
     return speedRange[0] + (Math.random() * (speedRange[1] - speedRange[0]));
-}
-
-function writeLetter(){
-    $name.innerHTML += text[i];
-    i++;
-
-    if(i < text.length){
-        setTimeout(writeLetter, getSpeed());
-
-    }
 }
